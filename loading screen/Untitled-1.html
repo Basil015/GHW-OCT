@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Sketch</title>
+
+    <!-- Load the Processing.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+</head>
+
+<body>
+    <script type="application/processing">
+			void setup(){
+				size(360, 360);
+			}
+			
+
+            var x = 0; void draw(){
+                 x+=1; 
+                 text('LOADING',50,50); 
+                 fill(255, 0, 0); 
+                 color(255, 0, 0); 
+                 rect(100,100,x,10);
+                 fill(0, 0, 0);
+                 text(x,150,110); 
+                  if(x>= 100){ x=0; 
+                } 
+        }
+
+        <!-- void draw(){
+            fill(0, 0, 0);
+            
+            var x = 0;
+            x+=1; 
+            fill(255, 0, 0); 
+            color(255, 0, 0);
+            rect(100,100,x,10); 
+            if(x>= 100){
+                x=0; }  
+            
+        } -->
+
+		</script>
+    <canvas> </canvas>
+</body>
+
+</html>
